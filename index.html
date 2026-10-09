@@ -1,10 +1,133 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>NFC Digital Card</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Business Card</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 30px 15px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 420px;
+            background: white;
+            border-radius: 25px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .profile {
+            width: 100px;
+            height: 100px;
+            background: #111827;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 5px;
+            color: #111827;
+        }
+
+        .business {
+            color: #6b7280;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            color: #4b5563;
+            font-size: 14px;
+            margin: 15px 0 25px;
+        }
+
+        .button {
+            display: block;
+            text-decoration: none;
+            background: #111827;
+            color: white;
+            padding: 14px;
+            margin: 10px 0;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            opacity: 0.85;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>NFC Digital Business Card</h1>
-    <p>Your digital business card is working!</p>
+
+    <div class="card">
+
+        <div class="profile">NFC</div>
+
+        <h1>Your Name</h1>
+
+        <div class="business">
+            Your Business Name
+        </div>
+
+        <p class="description">
+            Welcome to my digital business card.
+            Connect with me through the links below.
+        </p>
+
+        <a class="button" href="tel:+639000000000">
+            📞 Call Me
+        </a>
+
+        <a class="button" href="#">
+            💬 Messenger
+        </a>
+
+        <a class="button" href="#">
+            📘 Facebook
+        </a>
+
+        <a class="button" href="#">
+            📷 Instagram
+        </a>
+
+        <a class="button" href="#">
+            📍 Location
+        </a>
+
+        <div class="footer">
+            Powered by NFC Digital Card
+        </div>
+
+    </div>
+
 </body>
 </html>
